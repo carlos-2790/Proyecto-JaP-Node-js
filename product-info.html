@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <!--<link href="css/bootstrap.bundle.min.js/ bootstrap.bundle.js" rel="stylesheet">-->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="site-header sticky-top py-1 bg-dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="menu.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
+      <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
+      <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
+
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="usuario_nombre" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
+          <a class="dropdown-item" href="cart.html">Mi carrito</a>
+          <a class="dropdown-item" href="index">Salir</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="container p-5">
+    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
+      <h4 class="alert-heading">¡A trabajar! :)</h4>
+      <p>Esta sección corresponde a: Entrega 3 (Fecha de entrega: 13/09/2020) y Entrega 4 (Fecha de entrega: 20/09/2020).</p>
+      <hr>
+      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+    </div>
+  </div> -->
+  <main role="main">
+    <div class="container mt-5">
+      <div class="text-center p-4">
+        <h2>Descripción de los Productos</h2>
+        <p class="lead">Encontrarás aquí toda la información de los productos seleccionados.</p>
+
+      </div>
+      <h3 id="productName"></h3>
+      <hr class="my-3">
+      <dl>
+        <dt>Descripción</dt>
+        <dd>
+          <p id="productDescription"></p>
+        </dd>
+
+        <dt>Costo </dt>
+        <dd>
+          <p id="productCost"></p>
+        </dd>
+
+        <dt>Moneda</dt>
+        <dd>
+          <p id="productCurrency"></p>
+        </dd>
+
+        <dt>Cantidad de autos vendidos</dt>
+        <dd>
+          <p id="producSoldtCount"></p>
+        </dd>
+
+
+        <dt>Categoría</dt>
+        <dd>
+          <p id="productCategory"></p>
+        </dd>
+
+        <dt>Imágenes ilustrativas</dt>
+        <dd>
+          <div class="row text-center text-lg-left pt-2" id="productImagesGallery">
+           <br><br>
+           
+       <dt>Productos relacionados</dt>
+        <dd>
+
+
+         <div class="row text-center text-lg-left pt-2" id="relatedProducts">
+          </div>
+        
+    </div>
+
+    </div>
+
+
+    </dd>
+    </dl>
+
+
+    <h4 class="text-center p-4">Comentarios</h4>
+    <div class=" rounded font-italic container mt-5 p-3 mb-2 bg-secondary text-white" id="contenedor-info">
+
+    </div>
+    <div class="container mt-5">
+      <div class="text-center p-4">
+        <h5 class="text-center p-3 text-muted">Deje un comentario</h5><br><br>
+
+
+
+        <div class="text-lg-left">
+          <label class="font-weight-bold" for="#">Puntaje </label> <input type="number" class=" center " style="height: 30px; width: 40px;"
+            type="form-control" id="puntaje">
+
+          <br><br>
+
+          <div class="text-lg-left">
+            <label class="font-weight-bold" for="#">Mensaje </label>
+            <textarea class="form-control border border-danger" id="comentario" rows="3"
+              placeholder="Deje su comentario..."></textarea>
+
+          </div>
+          <br>
+
+          <input class="btn btn-outline-primary" type="button" value="Enviar" onclick="agregarComentario()">
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/usuarioWeb.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/product-info.js"></script>
+
+</body>
+
+</html>
